@@ -1,6 +1,6 @@
 {
   "name": "@kristall/get-ips",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get the IP's of the network device using JavaScript",
   "main": "index.js",
   "type": "module",

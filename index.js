@@ -15,5 +15,3 @@ export const getIps = (ipVersion = 'ipv4') => {
     const ips = wifi.filter(net => net.family === ipVersionSelected)
     return ips
 }
-
-console.log(getIps('ipv6'))
