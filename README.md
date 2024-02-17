@@ -7,7 +7,7 @@ This code is used to get the IP's of the network device using JavaScript.
 Use your favorite package manager to install the dependencies (npm, yarn , pnpm).
 
 ```bash
-pnpm install @kristall/get-ips
+pnpm add @kristall/get-ips
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ const ipv6Addresses = getIPs('ipv6');
 
 // IPv4 - Both are the same
 const ipv4Addresses = getIPs();
-const ipv6AddressesDefault = getIPs('ipv4');
+const ipv4AddressesDefault = getIPs('ipv4');
 ```
 
 The function will return an array of strings with the IP's of the device as a NetworkInterfaceInfo from the os module of node. 

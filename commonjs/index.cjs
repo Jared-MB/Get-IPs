@@ -1,4 +1,4 @@
-import os from 'node:os'
+const os = require('os')
 
 const network = os.networkInterfaces()
 const wifi = network['Wi-Fi']
@@ -12,7 +12,7 @@ const getIpVersion = (ipVersion) => {
  * @param {'ipv4' | 'ipv6'} ipVersion 
  * @returns NetworkInterfaceInfo[]
  */
-export const getIps = (ipVersion = 'ipv4') => {
+const getIps = (ipVersion = 'ipv4') => {
     let ipVersionSelected = getIpVersion(ipVersion)
     if (process.argv.length > 2) {
         ipVersionSelected = getIpVersion(process.argv[2])
@@ -25,3 +25,5 @@ export const getIps = (ipVersion = 'ipv4') => {
     const ips = wifi.filter(net => net.family === ipVersionSelected)
     return ips
 }
+
+module.exports = { getIps }

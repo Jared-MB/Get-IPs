@@ -1,13 +1,15 @@
 {
   "name": "@kristall/get-ips",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Get the IP's of the network device using JavaScript",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "tsc": "tsc"
   },
   "keywords": [],
   "author": "Angel Jared Muñoz Baez",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
